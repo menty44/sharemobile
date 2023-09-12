@@ -1,0 +1,7 @@
+{
+  "name": "Digicat",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
