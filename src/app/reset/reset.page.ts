@@ -13,11 +13,8 @@ export class ResetPage implements OnInit {
   ngOnInit() {
   }
 
-  reset(){
-    this.router.navigate(['/reset'])
+  login(){
+    this.router.navigate(['/'])
   }
 
-  register(){
-    this.router.navigate(['/register'])
-  }
 }

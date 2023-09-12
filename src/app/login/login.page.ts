@@ -13,6 +13,13 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
+  customCounterFormatter(inputLength: number, maxLength: number) {
+    return `${maxLength - inputLength} characters remaining`;
+  }
+
+  login(){
+    this.router.navigate(['/dashboard'])
+  }
   reset(){
     this.router.navigate(['/reset'])
   }

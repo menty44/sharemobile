@@ -11,9 +11,9 @@
 
     <ion-input label="Email" labelPlacement="floating" placeholder="Enter email"></ion-input>
 
-    <ion-input label="Password" type="password" labelPlacement="floating" placeholder=""></ion-input>
+    <ion-input label="Password" [counter]="true" minlength="6" [counter]="true" type="password" labelPlacement="floating" placeholder=""></ion-input>
 
-    <ion-button style="padding-top: 1%; width: 100%" shape="round">Login</ion-button>
+    <ion-button (click)="login()" style="padding-top: 1%; width: 100%" shape="round">Login</ion-button>
 
     <ion-text (click)="reset()" class="center-element" color="primary" style="padding-top: 20.5%">
       <h6>Forgot password?</h6>
