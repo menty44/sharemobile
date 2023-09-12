@@ -1,18 +1,38 @@
 <ion-content [fullscreen]="false">
-  
-<img src="assets/eclipse.png">
+
+<img class="bottom-image" src="assets/eclipse.png">
+<img class="top-image" src="assets/img.png">
 
 </ion-content>
 
-<ion-content [fullscreen]="false">
-  <ion-list style="padding-left: 5%; padding-right: 5%; padding-top: 10%">
+<ion-content [fullscreen]="false" style="height: 100%">
+  <ion-list style="padding-left: 5%; padding-right: 5%; padding-top: 10%; height: 100%">
 
 
-    <ion-item>
-      <ion-input label="Email" labelPlacement="floating" placeholder="Enter email"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input label="Password" type="password" labelPlacement="floating" placeholder=""></ion-input>
-    </ion-item>
+    <ion-input label="Email" labelPlacement="floating" placeholder="Enter email"></ion-input>
+
+    <ion-input label="Password" type="password" labelPlacement="floating" placeholder=""></ion-input>
+
+    <ion-button style="padding-top: 1%; width: 100%" shape="round">Login</ion-button>
+
+    <ion-text class="center-element" color="primary" style="padding-top: 20.5%">
+      <h6>Forgot password?</h6>
+    </ion-text>
+
+    <ion-text class="center-element" color="" style="padding-top: 40.5%">
+      <h6 style="font-weight: bolder">OR</h6>
+    </ion-text>
+
+    <ion-text class="center-element" color="" style="padding-top: 55.5%">
+      <h6>Don't have an account?</h6>
+    </ion-text>
+
+    <ion-text class="center-element" color="primary" style="padding-top: 66.5%">
+      <h6>Create Account</h6>
+    </ion-text>
+
+
   </ion-list>
+
+
 </ion-content>

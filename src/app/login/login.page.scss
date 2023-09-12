@@ -1,0 +1,21 @@
+.bottom-image {
+  width: 100%;
+  height: 70%;
+}
+
+/* Style for the top image */
+.top-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  //opacity: 0.5; /* Adjust the opacity to control transparency */
+}
+
+.center-element {
+  padding-top: 2%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
