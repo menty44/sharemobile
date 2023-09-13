@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
@@ -6,9 +6,11 @@ import {Router} from "@angular/router";
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page {
+export class Tab1Page implements OnInit{
 
-  public items: any[] = []
+  public items: any[] = [];
+  showMenu = false;
+
   constructor(public router: Router) { }
 
   ngOnInit() {
@@ -24,9 +26,22 @@ export class Tab1Page {
     ]
   }
 
+
   reroute(path: any){
     console.log(path)
     this.router.navigate([`/${path}`]).then(r => r)
+  }
+
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
+  }
+
+  menuItem1Action() {
+    // Implement your action for menu item 1
+  }
+
+  menuItem2Action() {
+    // Implement your action for menu item 2
   }
 
 }

@@ -6,10 +6,28 @@
       <ion-avatar>
         <img src="assets/ppp.jpeg" alt="Avatar">
       </ion-avatar>
+
+
+
+      <ion-fab vertical="bottom" horizontal="end">
+        <ion-fab-button (click)="toggleMenu()">
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="top">
+          <ion-fab-button (click)="menuItem1Action()">
+            <ion-icon name="menu-outline"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-button (click)="menuItem2Action()">
+            <ion-icon name="menu-outline"></ion-icon>
+          </ion-fab-button>
+          <!-- Add more menu items as needed -->
+        </ion-fab-list>
+      </ion-fab>
+
     </ion-row>
 
     <div>
-      <img src="assets/bg-modified.png" style=" padding-right: 1%;  padding-left: 1%; height: 150px; width: 100%;">
+      <img src="assets/bg-modified.png" style=" padding-right: 2.5%;  padding-left: 2.5%; height: 150px; width: 100%;">
     </div>
 
 
