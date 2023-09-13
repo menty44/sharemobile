@@ -4,12 +4,12 @@
 
 
       <ion-col  size="6"  *ngFor="let item of items; let i = index">
-        <ion-card  style="background: #eaf2fc">
+        <ion-card (click)="reroute(item.path)" style="background: #eaf2fc">
           <ion-card-header>
             <ion-card-title color="primary">{{item.name}}</ion-card-title>
           </ion-card-header>
 
-          <ion-card-content (click)="reroute('products')">
+          <ion-card-content>
             Here's a small text description
           </ion-card-content>
         </ion-card>
