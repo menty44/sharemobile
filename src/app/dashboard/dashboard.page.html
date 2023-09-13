@@ -1,9 +1,129 @@
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">dashboard</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid [fixed]="true">
+    <ion-row>
+
+
+      <ion-list>
+        <ion-col style="width: 50%!important;" *ngFor="let item of items; let index">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title color="primary">{{item.name}}</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content>
+              Here's a small text description for the card content. Nothing more, nothing less.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+<!--        <ion-col>-->
+<!--          <ion-card>-->
+<!--            <ion-card-header>-->
+<!--              <ion-card-title>Cart Orders</ion-card-title>-->
+<!--              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>-->
+<!--            </ion-card-header>-->
+
+<!--            <ion-card-content>-->
+<!--              Here's a small text description for the card content. Nothing more, nothing less.-->
+<!--            </ion-card-content>-->
+<!--          </ion-card>-->
+<!--        </ion-col>-->
+
+<!--        <ion-col>-->
+<!--          <ion-card>-->
+<!--            <ion-card-header>-->
+<!--              <ion-card-title>Coupons</ion-card-title>-->
+<!--              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>-->
+<!--            </ion-card-header>-->
+
+<!--            <ion-card-content>-->
+<!--              Here's a small text description for the card content. Nothing more, nothing less.-->
+<!--            </ion-card-content>-->
+<!--          </ion-card>-->
+<!--        </ion-col>-->
+
+<!--        <ion-col>-->
+<!--          <ion-card>-->
+<!--            <ion-card-header>-->
+<!--              <ion-card-title>Customers</ion-card-title>-->
+<!--              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>-->
+<!--            </ion-card-header>-->
+
+<!--            <ion-card-content>-->
+<!--              Here's a small text description for the card content. Nothing more, nothing less.-->
+<!--            </ion-card-content>-->
+<!--          </ion-card>-->
+<!--        </ion-col>-->
+
+<!--        <ion-col>-->
+<!--          <ion-card>-->
+<!--            <ion-card-header>-->
+<!--              <ion-card-title>Sale Leads</ion-card-title>-->
+<!--              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>-->
+<!--            </ion-card-header>-->
+
+<!--            <ion-card-content>-->
+<!--              Here's a small text description for the card content. Nothing more, nothing less.-->
+<!--            </ion-card-content>-->
+<!--          </ion-card>-->
+<!--        </ion-col>-->
+
+<!--        <ion-col>-->
+<!--          <ion-card>-->
+<!--            <ion-card-header>-->
+<!--              <ion-card-title>Impressions</ion-card-title>-->
+<!--              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>-->
+<!--            </ion-card-header>-->
+
+<!--            <ion-card-content>-->
+<!--              Here's a small text description for the card content. Nothing more, nothing less.-->
+<!--            </ion-card-content>-->
+<!--          </ion-card>-->
+<!--        </ion-col>-->
+
+<!--        <ion-col>-->
+<!--          <ion-card>-->
+<!--            <ion-card-header>-->
+<!--              <ion-card-title>Team Members</ion-card-title>-->
+<!--              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>-->
+<!--            </ion-card-header>-->
+
+<!--            <ion-card-content>-->
+<!--              Here's a small text description for the card content. Nothing more, nothing less.-->
+<!--            </ion-card-content>-->
+<!--          </ion-card>-->
+<!--        </ion-col>-->
+
+<!--        <ion-col>-->
+<!--          <ion-card>-->
+<!--            <ion-card-header>-->
+<!--              <ion-card-title>Settings</ion-card-title>-->
+<!--              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>-->
+<!--            </ion-card-header>-->
+
+<!--            <ion-card-content>-->
+<!--              Here's a small text description for the card content. Nothing more, nothing less.-->
+<!--            </ion-card-content>-->
+<!--          </ion-card>-->
+<!--        </ion-col>-->
+
+<!--        <ion-col>-->
+<!--          <ion-card>-->
+<!--            <ion-card-header>-->
+<!--              <ion-card-title>Customer Care</ion-card-title>-->
+<!--              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>-->
+<!--            </ion-card-header>-->
+
+<!--            <ion-card-content>-->
+<!--              Here's a small text description for the card content. Nothing more, nothing less.-->
+<!--            </ion-card-content>-->
+<!--          </ion-card>-->
+<!--        </ion-col>-->
+      </ion-list>
+
+    </ion-row>
+  </ion-grid>
 </ion-content>
 
 <ion-tabs>

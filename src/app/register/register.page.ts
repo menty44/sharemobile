@@ -14,10 +14,10 @@ export class RegisterPage implements OnInit {
   }
 
   login(){
-    this.router.navigate(['/'])
+    this.router.navigate(['/']).then(r => r)
   }
 
   register(){
-    this.router.navigate(['/register'])
+    this.router.navigate(['/register']).then(r => r)
   }
 }

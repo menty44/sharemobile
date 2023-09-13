@@ -18,13 +18,13 @@ export class LoginPage implements OnInit {
   }
 
   login(){
-    this.router.navigate(['/dashboard'])
+    this.router.navigate(['/dashboard']).then(r => r)
   }
   reset(){
-    this.router.navigate(['/reset'])
+    this.router.navigate(['/reset']).then(r => r)
   }
 
   register(){
-    this.router.navigate(['/register'])
+    this.router.navigate(['/register']).then(r => r)
   }
 }

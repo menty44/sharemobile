@@ -14,7 +14,7 @@ export class ResetPage implements OnInit {
   }
 
   login(){
-    this.router.navigate(['/'])
+    this.router.navigate(['/']).then(r => r)
   }
 
 }
