@@ -14,13 +14,13 @@ export class Tab1Page {
   ngOnInit() {
     this.items = [
       {name: "Products", path: "products"},
-      {name: "Cart Orders"},
-      {name: "Coupons"},
-      {name: "Customers"},
-      {name: "Impressions"},
-      {name: "My Team"},
-      {name: "Settings"},
-      {name: "Support"},
+      {name: "Cart Orders", path: "orders"},
+      {name: "Coupons", path: "coupons"},
+      {name: "Customers", path: "customers"},
+      {name: "Impressions", path: "impressions"},
+      {name: "My Team", path: "team"},
+      {name: "Settings", path: "settings"},
+      {name: "Support", path: "support"},
     ]
   }
 
