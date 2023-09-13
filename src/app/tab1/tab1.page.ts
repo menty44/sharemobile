@@ -45,4 +45,8 @@ export class Tab1Page implements OnInit{
     // Implement your action for menu item 2
   }
 
+  logout() {
+    this.router.navigate([`/`]).then(r => r)
+  }
+
 }
