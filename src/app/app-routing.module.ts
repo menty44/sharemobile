@@ -68,6 +68,10 @@ const routes: Routes = [
     path: 'catalogues',
     loadChildren: () => import('./catalogues/catalogues.module').then( m => m.CataloguesPageModule)
   },
+  {
+    path: 'saleleads',
+    loadChildren: () => import('./saleleads/saleleads.module').then( m => m.SaleleadsPageModule)
+  },
   // {
   //   path: 'tab4',
   //   loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)

@@ -19,6 +19,7 @@ export class Tab1Page implements OnInit{
       {name: "Cart Orders", path: "orders"},
       {name: "Coupons", path: "coupons"},
       {name: "Customers", path: "customers"},
+      {name: "Sale Leads", path: "saleleads"},
       {name: "Impressions", path: "impressions"},
       {name: "My Team", path: "team"},
       {name: "Settings", path: "settings"},
