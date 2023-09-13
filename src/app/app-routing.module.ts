@@ -64,6 +64,10 @@ const routes: Routes = [
     path: 'impressions',
     loadChildren: () => import('./impressions/impressions.module').then( m => m.ImpressionsPageModule)
   },
+  {
+    path: 'catalogues',
+    loadChildren: () => import('./catalogues/catalogues.module').then( m => m.CataloguesPageModule)
+  },
   // {
   //   path: 'tab4',
   //   loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
