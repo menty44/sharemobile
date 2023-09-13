@@ -3,36 +3,25 @@
   <ion-grid [fixed]="false" style="padding-top: 0%!important;">
 
     <ion-row style="padding-left: 2.5%!important; padding-bottom: 2.5%; padding-top: 2.5%">
-      <ion-avatar>
-        <img src="assets/ppp.jpeg" alt="Avatar">
-      </ion-avatar>
+      <ion-col size="6">
+        <ion-avatar>
+          <img src="assets/ppp.jpeg" alt="Avatar">
+        </ion-avatar>
+      </ion-col>
 
-      <ion-fab vertical="bottom" horizontal="end">
-        <ion-fab-button (click)="toggleMenu()">
-          <ion-icon name="add"></ion-icon>
-        </ion-fab-button>
-        <ion-fab-list side="top">
-          <ion-fab-button color="danger" (click)="reroute('settings')">
-            <ion-icon name="cog"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button color="danger" (click)="menuItem1Action()">
-            <ion-icon name="finger-print"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button color="danger" (click)="reroute('team')">
-            <ion-icon name="person-add"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button color="danger" (click)="reroute('coupons')">
-            <ion-icon name="pricetags"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button color="danger" (click)="menuItem2Action()">
-            <ion-icon name="folder-open"></ion-icon>
-          </ion-fab-button>
-          <!-- Add more menu items as needed -->
+      <ion-col size="6">
+        <div style="display: flex; justify-content: flex-end; padding-right: 5.5%!important; padding-top: 2.5%;">
+          <ion-icon name="log-out" color="danger"></ion-icon>
+          <ion-label color="danger" style="font-weight: bold">Logout</ion-label>
+        </div>
+      </ion-col>
 
-        </ion-fab-list>
-      </ion-fab>
+
+
+
 
     </ion-row>
+
 
     <div>
       <img src="assets/bg-modified2.png" style=" padding-right: 2.5%;  padding-left: 2.5%; height: 150px; width: 100%;">
@@ -41,7 +30,7 @@
 
     <ion-row >
 
-      <ion-col size="12">
+      <ion-col size="6">
         <ion-card (click)="reroute('catalogues')" style="background: #eaf2fc">
           <ion-card-header>
             <ion-card-title color="primary">Catalogues</ion-card-title>
@@ -69,6 +58,29 @@
 
     </ion-row>
   </ion-grid>
+  <ion-fab vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="toggleMenu()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="danger" (click)="reroute('settings')">
+        <ion-icon name="cog"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="danger" (click)="menuItem1Action()">
+        <ion-icon name="finger-print"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="danger" (click)="reroute('team')">
+        <ion-icon name="person-add"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="danger" (click)="reroute('coupons')">
+        <ion-icon name="pricetags"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="danger" (click)="menuItem2Action()">
+        <ion-icon name="folder-open"></ion-icon>
+      </ion-fab-button>
+      <!-- Add more menu items as needed -->
 
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>
 
