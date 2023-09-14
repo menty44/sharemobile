@@ -8,12 +8,15 @@
 <ion-content [fullscreen]="false" style="height: 100%">
   <ion-list style="padding-left: 5%; padding-right: 5%; padding-top: 10%; height: 100%">
 
+    <ion-row>
+      <ion-input label="Email" labelPlacement="floating" placeholder="Enter email"></ion-input>
 
-    <ion-input label="Email" labelPlacement="floating" placeholder="Enter email"></ion-input>
+      <ion-input label="Password" [counter]="true" minlength="6" [counter]="true" type="password" labelPlacement="floating" placeholder=""></ion-input>
 
-    <ion-input label="Password" [counter]="true" minlength="6" [counter]="true" type="password" labelPlacement="floating" placeholder=""></ion-input>
+      <ion-button (click)="login()" style="padding-top: 1%; width: 100%" shape="round">Login</ion-button>
 
-    <ion-button (click)="login()" style="padding-top: 1%; width: 100%" shape="round">Login</ion-button>
+    </ion-row>
+    
 
     <ion-text (click)="reset()" class="center-element" color="primary" style="padding-top: 20.5%">
       <h6>Forgot password?</h6>
@@ -21,6 +24,7 @@
 
     <ion-text class="center-element" color="" style="padding-top: 40.5%">
       <h6 style="font-weight: bolder">OR</h6>
+
     </ion-text>
 
     <ion-text class="center-element" color="" style="padding-top: 55.5%">
