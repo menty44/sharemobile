@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="false" >
+<ion-content [fullscreen]="false">
 
   <ion-grid [fixed]="false" style="padding-top: 0%!important;">
 
@@ -24,19 +24,7 @@
     </div>
 
 
-    <ion-row >
-
-      <ion-col size="6">
-        <ion-card (click)="reroute('catalogues')" style="background: #eaf2fc">
-          <ion-card-header>
-            <ion-card-title color="primary">Catalogues</ion-card-title>
-          </ion-card-header>
-
-          <ion-card-content>
-            Here's a small text description
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
+    <ion-row>
 
       <ion-col size="6" *ngFor="let item of items; let i = index">
         <ion-card (click)="reroute(item.path)" style="background: #eaf2fc">
@@ -45,7 +33,9 @@
           </ion-card-header>
 
           <ion-card-content>
-            Here's a small text description
+            <div class="center">
+              <img src="/assets/{{item.image}}" width="100px">
+            </div>
           </ion-card-content>
         </ion-card>
       </ion-col>

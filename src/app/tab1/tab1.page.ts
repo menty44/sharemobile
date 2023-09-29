@@ -15,8 +15,9 @@ export class Tab1Page implements OnInit{
 
   ngOnInit() {
     this.items = [
+      {name: "Catalogues", path: "products", image: "prod.png"},
       {name: "Products", path: "products"},
-      {name: "Cart Orders", path: "orders"},
+      {name: "Cart Orders", path: "trolley.png"},
       {name: "Coupons", path: "coupons"},
       {name: "Customers", path: "customers"},
       {name: "Sale Leads", path: "saleleads"},
